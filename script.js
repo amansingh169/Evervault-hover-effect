@@ -3,7 +3,7 @@ const text = document.querySelector(".text");
 
 const chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
 
-const randomChar = () => chars[Math.floor(Math.random(0, 100) * chars.length)],
+const randomChar = () => chars[Math.floor(Math.random() * chars.length)],
   randomString = (length) => Array.from(Array(length)).map(randomChar).join("");
 
 const handleOnMove = (e) => {
